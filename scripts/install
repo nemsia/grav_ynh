@@ -50,7 +50,7 @@ sudo $final_path/bin/grav
 # Set permissions
 sudo chown -R www-data: $final_path
 
-echo -e "127.0.0.1 $domain #GRAV" | sudo tee -a /etc/hosts
+# echo -e "127.0.0.1 $domain #GRAV" | sudo tee -a /etc/hosts
 
 # Copy nginx config
 sudo cp ../conf/nginx.conf /etc/nginx/conf.d/$domain.d/$app.conf
